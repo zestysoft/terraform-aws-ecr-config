@@ -12,10 +12,3 @@ terraform {
     }
   }
 }
-
-provider "aws" {
-  # Configuration options
-  shared_config_files      = ["/Users/jnappi/.aws/config"]
-  shared_credentials_files = ["/Users/jnappi/.aws/credentials"]
-  profile                  = "uptycs-dev"
-}
