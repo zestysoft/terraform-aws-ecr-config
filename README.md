@@ -27,12 +27,8 @@ module "ecr-config" {
   uptycs_account_id = "cloudquery"
 
   # Copy the AWS Account ID from Uptycs UI
-  # Uptycs' UI : "Cloud"->"AWS"->"Integrations"->"ACCOUNT INTEGRATION"
+  # Uptycs' UI : "Configurations"->"Registry Configuration"->"ADD REGISTRY"
   external_id = "Uptycs-AWS-ACCOUNT-ID"
-
-  tags = {
-    Integration     = "uptycs"
-  }
 }
 
 output "aws_ecr_role_arn" {
